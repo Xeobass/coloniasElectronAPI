@@ -43,7 +43,8 @@ Voluntario.create = (newUser, result) => {
   };
 
   Voluntario.credentials = (voluntarioPass,voluntarioName,result)=>{
-    sql.query(`SELECT * FROM tb_usuarios WHERE nombre_usuario =\'${voluntarioName}\' AND pass_usuario=\'${voluntarioPass}\' and activo=1;`,(err,res)=>{
+   sql.query(`SELECT * FROM tb_usuarios WHERE nombre_usuario =\'${voluntarioName}\' AND pass_usuario=\'${voluntarioPass}\' and activo=1;`,(err,res)=>{
+        //sql.end();
       if(err){
         console.log("Error solicitando datos de login:",err);
         result(err,null);
