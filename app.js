@@ -19,6 +19,8 @@ app.get("/", (req, res) => {
 
 
 require("./app/routes/voluntario.routes")(app);
+require("./app/routes/colonias.routes")(app);
+require("./app/routes/gatos.routes")(app);
 
 app.listen(port,()=>{
     console.log(`Servidor escuchando en puerto ${port}`);
