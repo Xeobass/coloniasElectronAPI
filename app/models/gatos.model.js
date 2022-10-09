@@ -7,7 +7,8 @@ const Gatos = function(gato) {
   this.tb_datos_gato_fk = gato.tb_datos_gato_fk;
   this.tb_datos_adopt_fk = gato.tb_datos_adopt_fk;
   this.num_chip = gato.num_chip;
-
+  this.prote = gato.prote;
+  
   console.log("GATO:",gato);
 };
 

@@ -62,8 +62,8 @@ exports.create = (req, res) => {
   };
   
   exports.credentials = (req, res) =>{
-    console.log(`accediendo al sistema con las credenciales: usr -> ${req.query.nombre_usuario} y pass -> ${req.query.pass_usuario}`);
-    Voluntario.credentials(req.query.pass_usuario,req.query.nombre_usuario,(err,resp)=>{
+    console.log(`accediendo al sistema con las credenciales: usr -> ${req.query.nombre_usuario} y pass -> ${req.query.pass_usuario} de la prote -> ${req.query.prote}`);
+    Voluntario.credentials(req.query.pass_usuario,req.query.nombre_usuario,req.query.prote,(err,resp)=>{
       if(err){
         console.log("Error, el usuario no existe o no activado");
         res.send(false);

@@ -15,7 +15,8 @@ exports.create = (req, res) => {
     nombre_gato : req.body.nombre_gato,
     tb_datos_gato_fk : req.body.tb_datos_gato_fk,
     tb_datos_adopt_fk : req.body.tb_datos_adopt_fk,
-    num_chip : req.body.num_chip
+    num_chip : req.body.num_chip,
+    prote : req.body.prote
   });
 
   console.log("El gato definido es:",gatos);
