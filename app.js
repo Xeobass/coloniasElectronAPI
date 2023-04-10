@@ -23,6 +23,7 @@ require("./app/routes/colonias.routes")(app);
 require("./app/routes/gatos.routes")(app);
 require("./app/routes/adoptante.routes")(app);
 require("./app/routes/dni.routes")(app);
+require("./app/routes/datosgato.routes")(app);
 
 app.listen(port,()=>{
     console.log(`Servidor escuchando en puerto ${port}`);
